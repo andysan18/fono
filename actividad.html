@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1"&amp;gt; http-equiv=”Content-Type” charset=UTF-8″>
+    <script src="js/proyecto-pda.js" type="text/javascript"></script>
+    <title>Conciencia fonologica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" type="text/css" href="css/actividad.css">
+
+<body onload="Test()">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-11">
+                <div class="container" id="bordeContainer">
+                    <div id="rectangle">
+                        <div class="actividad" id="actividad">
+                            <div class="container" id="enunciadoContainer">
+                                <label id="enunciado"></label>
+                            </div>
+    
+                            <div class="container" id="alternativas">
+                                <input type="button" class="botonAlternativa" id="btn1" onclick="comprobarRespuesta(document.getElementById('btn1'))">
+                                <input type="button" class="botonAlternativa" id="btn2" onclick="comprobarRespuesta(document.getElementById('btn2'))">
+                                <input type="button" class="botonAlternativa" id="btn3" onclick="comprobarRespuesta(document.getElementById('btn3'))">
+                                <input type="button" class="botonAlternativa" id="btn4" onclick="comprobarRespuesta(document.getElementById('btn4'))">
+                                <input type="button" class="botonOculto" id="botonOculto">
+                            </div>
+                        </div>
+
+                        <div class="respuestaBuena" id="respuestaBuena">
+                            <label id="titulo">Respuesta correcta!! </label>
+                            <label id="subtitulo">Felicidades!! </label>                                
+                        </div>
+
+                        <div class="respuestaMala" id="respuestaMala">
+                            <label id="titulo">Respuesta incorrecta!! </label>
+                            <label id="subtitulo">Intentalo de nuevo</label>
+                            <input type="button" id="reintentar" value="Reintentar" onclick="reintentar()">
+                        </div>
+
+                        <div class="gif" id="gif">
+                            <img src="gif/aplausos2.gif" id="gif1"> 
+                            <img src="gif/aplausos.gif" id="gif2">
+                            <img src="gif/llorando.gif" id="gif3">
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="col-lg-1">
+                <a href="actividad.html">
+                    <input type="button" class="boton" id="siguiente" value="->">
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <a href="index.html">
+                <input type="button" class="info" value="<">
+            </a>
+            <input type="button" class="info" value="I">
+            <a href="mensaje.html">
+                <input type="button" class="info" value="M">
+            </a>
+        </div>
+    </div>
+
+    <audio id="correcto" src="song/aplausos.mp3"></audio>
+    <audio id="incorrecto" src="song/incorrecto.mp3"></audio>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

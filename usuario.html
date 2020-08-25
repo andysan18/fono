@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1"&amp;gt; http-equiv=”Content-Type” charset=UTF-8″>
+    <title>Conciencia fonologica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" type="text/css" href="css/usuario.css">
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-4">
+                <div class="titulo">Actividades</div>
+            </div>
+            <div class="col-lg-4">
+                <div class="btn-group dropleft" id="dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="bandeja.html">Bandeja de entrada</a>
+                        <a class="dropdown-item" href="editarUser.html">Editar perfil</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="index.html">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="tabla">
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-6">
+                <div class="tablaOverflow">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Motivo</th>
+                                <th scope="col">Fecha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="act">
+                    <label id="tituloAct">Actividades</label>
+                    <div class="rectangulo"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <input type="button" class="boton" value="+" onclick="mostrarFormulario()">
+
+        <input type="button" class="botonAct" id="EliminarAct" value="Eliminar actividad">
+
+        <a href="agregarAct.html">
+            <input type="button" class="botonAct" id="AgregarAct" value="Agregar actividad">
+        </a>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-6">
+                <div class="formulario" id="formulario">
+                    <form class="form" id="form">
+                        <div class="form-group" id="center">
+                            <label for="disabledTextInput">Titulo</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Motivo</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Descripcion</label>
+                            <textarea class="form-control" rows="2" style="resize: none;"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary">Crear</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+    
+    <script>
+
+        function mostrarFormulario() {
+
+            if( document.getElementById("formulario").style.visibility != 'visible' ) {
+                document.getElementById("formulario").style.visibility = "visible";
+            } else{
+                document.getElementById("formulario").style.visibility = "hidden";
+            }
+        }
+
+    </script>  
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

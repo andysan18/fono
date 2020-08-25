@@ -1,0 +1,82 @@
+body{
+	background-image: url("../img/fondo1.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.titulo{
+    margin-top: 1%;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 30px;
+    font-size: 500%;
+    font-weight: bold;
+}
+
+#lista{
+    margin-top: 2%;
+    border: 1px black solid;
+}
+
+#rectangulo{
+    width:1100px;
+    height:400px;
+    background:white;
+}
+
+#descripcion{
+    margin-top: 2%;
+    border: 1px black solid;
+    background: #C5FFFD;
+    border-radius: 10px;
+}
+
+#margenTop{
+    margin-top: 2%;
+}
+
+#margenBot{
+    margin-bottom: 3%;
+}
+
+textarea{
+    resize: none;
+}
+
+#botones{
+    margin-top: 1%;
+}
+
+.boton{
+    width:40px;
+    height:40px;
+    background-color:#4EFEF7;
+    margin: 5px;
+    padding:10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-size:12px;
+    text-transform: uppercase;
+    float:left;
+    border: 2px black solid;
+    outline: none;
+}
+
+#btnVolver{
+    margin-left: 1%;
+}
+
+#btnSiguiente{
+    margin-left: 90%;
+}
+
+.boton:hover{
+    opacity: 0.50;
+    -moz-opacity: .50;
+    filter:alpha (opacity=50);
+}

@@ -1,0 +1,101 @@
+body{
+	background-image: url("../img/fondo1.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.titulo{
+    margin-top: 1%;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 30px;
+    font-size: 500%;
+    font-weight: bold;
+}
+
+.boton{
+    width:30px;
+    height:30px;
+    background-color:#4EFEF7;
+    border-radius: 20px;
+    font-size:15px;
+    font-weight: bold;
+    border: 2px black solid;
+    outline: none;
+    margin-left: 40%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.botonAct{
+    width:150px;
+    height:30px;
+    background-color:#4EFEF7;
+    border-radius: 20px;
+    font-size:15px;
+    border: 2px black solid;
+    outline: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#EliminarAct{
+    margin-left: 27%;
+}
+
+#AgregarAct{
+    margin-left: 8%;
+}
+
+#dropdown{
+    margin-top: 5%;
+    margin-left: 100%;
+}
+
+.formulario{
+    border: 2px black solid;
+	border-radius: 30px;
+	background: #C5FFFD;
+    white-space:nowrap;
+    margin-right: 34%;
+    visibility: hidden;
+}
+
+.form{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tablaOverflow{
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 3px black solid;
+    border-radius: 10px;
+}
+
+#tabla{
+    margin-top: 1%;
+    max-height: 300px;    
+}
+
+.rectangulo{
+    border: 2px black solid;
+    height: 300px;
+    width: 500px;
+}
+
+.act{
+    margin-top: -5%;
+}
